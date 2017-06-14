@@ -1,0 +1,14 @@
+{
+  "moduleFileExtensions": [
+    "jsx",
+    "js",
+    "json"
+  ],
+  "testPathIgnorePatterns": [
+    "<rootDir>/(build|docs|node_modules)/"
+  ],
+  "testEnvironment": "node",
+  "modulePaths": [
+    "<rootDir>/src"
+  ]
+}
