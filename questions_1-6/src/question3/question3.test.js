@@ -21,9 +21,15 @@ describe(TITLE, () => {
     ).toEqual(immutableSource);
   });
 
-  it(`Should return an empty array`, () => {
+  it(`Should return an empty array (missing first arg)`, () => {
     expect(
       question_3(undefined)
+    ).toHaveLength(0);
+  });
+
+  it(`Should return an empty array (contains some floats)`, () => {
+    expect(
+      question_3([45, 45.6, 0.34, 2.1])
     ).toHaveLength(0);
   });
 });

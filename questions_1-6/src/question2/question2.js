@@ -1,11 +1,11 @@
 /**
- * Sorts array of string
- * @param  {Array}  sourceArray [description]
- * @return {[type]}             [description]
+ * Sorts array of strings
+ * @param  {Array}  sourceArray Array to sort
+ * @return {Array<string>|Array<Empty>}             Sorted array or an empty array we don't pass an array of strings
  */
 const question_2 = (source = []) => {
-  if (!source.length) {
-    return source;
+  if (!source.length || !source.every(item => typeof item === 'string')) {
+    return [];
   }
 
   const sourceCopy = [...source];

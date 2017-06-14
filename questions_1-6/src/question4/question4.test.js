@@ -31,5 +31,11 @@ describe(TITLE, () => {
     expect(
       computeString(source[0])
     ).toBe(expectedResult[0]);
-  })
+  });
+
+  it(`Should return an empty array (not only strings in the array)`, () => {
+    expect(
+      question_4(["Jesse Eisenberg", 21, "Rooney Mara", "Andrew Garfield", 42])
+    ).toHaveLength(0);
+  });
 });

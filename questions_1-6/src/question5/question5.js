@@ -1,23 +1,18 @@
 /**
- * [description]
- * @param  {String} keyToFind 
- * @param  {Array}  source    
+ * Indicates if all objects in the array contains the keyToFind as property
+ * @param  {string} keyToFind string key to find in the array's object
+ * @param  {Array}  source Array to inspect
  * @return {Boolean}
  */
 const question_5 = (keyToFind = '', source = []) => {
-  if (!keyToFind.length || !source.length || typeof keyToFind !== 'string') {
+  if (!keyToFind.length
+    || !source.length
+    || !source.every(item => typeof item === 'object')
+    || typeof keyToFind !== 'string') {
     return false;
   }
 
-  let currentObj = null;
-  for (let i = 0; i < source.length; i++) {
-    currentObj = source[i];
-    if (typeof currentObj !== 'object' || !currentObj.hasOwnProperty(keyToFind)) {
-      return false;
-    }
-  }
-
-  return true;
+  return source.every(currentObj => currentObj.hasOwnProperty(keyToFind));
 }
 
 export default question_5;

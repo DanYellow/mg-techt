@@ -21,9 +21,15 @@ describe(TITLE, () => {
     ).toEqual(immutableSource);
   });
 
-  it(`Should return an empty array`, () => {
+  it(`Should return an empty array (no first param)`, () => {
     expect(
       question_2(undefined)
+    ).toHaveLength(0);
+  });
+
+  it(`Should return an empty array (not only string in the array)`, () => {
+    expect(
+      question_2([45, 'Cacambo', 'Cunegonde', 'Farmer'])
     ).toHaveLength(0);
   });
 });

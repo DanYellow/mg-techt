@@ -15,7 +15,7 @@ describe(TITLE, () => {
     ).toBeTruthy();
   });
 
-  it('Should not pass the test (Missing key for one item)', () => {
+  it('Should not pass the test (Missing key to find for one item)', () => {
     const source = [
       { city: "Joliette"},
       { city: "Sudbury", province: "ON" },

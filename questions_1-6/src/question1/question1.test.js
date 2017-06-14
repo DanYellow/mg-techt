@@ -33,4 +33,12 @@ describe(TITLE, () => {
     ).toEqual(srcArray);
   });
 
+  it(`Should remove object in the array`, () => {
+    const srcArray = [{hello: 'world'}, 45, 23, 67, 'hello'];
+
+    expect(
+      question_1({hello: 'world'}, srcArray)
+    ).toEqual([45, 23, 67, 'hello']);
+  });
+
 });

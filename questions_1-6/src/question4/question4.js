@@ -15,12 +15,12 @@ export const computeString = (str = '') => {
 
 /**
  * Sorts array of string
- * @param  {Array}  source [description]
- * @return {[type]}             [description]
+ * @param  {Array}  source Source array of string to compute
+ * @return {Array<string>|Array<empty>} New array of strings computed or empty array if source not contains only strings
  */
 const question_4 = (source = []) => {
-  if (!source.length) {
-    return source;
+  if (!source.length || !source.every(item => typeof item === 'string')) {
+    return [];
   }
 
   const sourceCopy = [...source];

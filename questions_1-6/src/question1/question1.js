@@ -13,7 +13,7 @@ const question_1 = (valueToRemove, source = []) => {
   let currentValue = null;
   for (let i = 0; i < source.length; i++) {
     currentValue = source[i];
-    if (currentValue === valueToRemove) {
+    if (JSON.stringify(currentValue) === JSON.stringify(valueToRemove)) {
       continue;
     }
     newArray.push(currentValue);
