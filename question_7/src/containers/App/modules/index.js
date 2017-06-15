@@ -10,7 +10,7 @@ const initialState = {
 const appReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_TRANSACTIONS: {
-      return {...state, ...{transactions: action.payload.transactions}}
+      return { ...state, ...{ transactions: action.payload.transactions }}
     }
 
     default:
@@ -23,7 +23,7 @@ export default appReducer
 // --- Actions
 export const getTransactions = () => ({
   type: FETCH_TRANSACTIONS,
-  payload: { 
+  payload: {
     transactions: FakerManager.getTransactions()
   },
 });

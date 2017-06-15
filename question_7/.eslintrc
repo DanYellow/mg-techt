@@ -1,0 +1,40 @@
+{ 
+  "extends": "airbnb",
+  "rules": {
+    "semi": 0,
+    object-curly-spacing: [
+      "error", "always", { 
+        "objectsInObjects": false, "arraysInObjects": true 
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prop-types": 0,
+    "jsx-quotes": [2, "prefer-single"],
+    "react/jsx-max-props-per-line": [1, { "maximum": 3 }],
+    "comma-dangle": 0,
+    "arrow-body-style": 0,
+    "react/jsx-indent": 0,
+    "react/no-array-index-key": 0,
+    "indent": 0,
+    "max-len": 0,
+    "react/jsx-indent-props": 0
+  },
+  "globals": {
+    "window": true,
+    "NODE_ENV": true,
+    "__REDUX_DEVTOOLS_EXTENSION__": true
+  },
+  "env": {
+    "browser": true,
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "src"
+        ]
+      }
+    }
+  }
+}

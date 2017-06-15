@@ -1,7 +1,6 @@
 const webpack = require('webpack')
 const path = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const environnementVars = {
@@ -24,17 +23,6 @@ module.exports = {
         enforce: 'pre',
         exclude: /node_modules/,
         use: ['babel-loader']
-      },
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: ['css-loader',
-            {
-              loader: 'postcss-loader',
-            }
-          ]
-        })
       }
     ],
   },
@@ -49,7 +37,7 @@ module.exports = {
     new webpack.DefinePlugin(environnementVars),
     new CleanWebpackPlugin(['build/*.*']),
     new CopyWebpackPlugin([
-      { from: `static/index.html`, to: `${buildDirectory}/index.html` },
+      { from: `./index.html`, to: `${buildDirectory}/index.html` },
     ])
   ],
 }

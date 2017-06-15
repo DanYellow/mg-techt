@@ -13,7 +13,7 @@ import store from './store';
 ReactDOM.render(
   <Provider store={store}>
     <HashRouter>
-      <Route path="/" component={App}/>
+      <Route path='/' component={App} />
     </HashRouter>
   </Provider>,
   document.getElementById('root'),

@@ -2,9 +2,9 @@ import 'whatwg-fetch'
 import faker from 'faker'
 
 class FakerManager {
-  static getTransactions(params) {
+  static getTransactions() {
     return Array.apply(null, { length: 20 }).map(() => {
-      let transaction = faker.helpers.createTransaction()
+      const transaction = faker.helpers.createTransaction()
       transaction.recipient = faker.helpers.userCard()
       transaction.uuid = faker.random.uuid()
 
