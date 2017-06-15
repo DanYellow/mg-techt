@@ -1,0 +1,9 @@
+div#center {
+    position: absolute;
+    width: 500px;
+
+    /* I will add the following lines (Normally I use an autoprefixer) */
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}

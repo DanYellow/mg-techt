@@ -1,0 +1,7 @@
+@media screen and (min-width: 769px) {
+  .fixIt {
+    position: fixed;
+    top: 0;
+  }
+}
+
