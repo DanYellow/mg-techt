@@ -1,0 +1,17 @@
+{
+  "moduleFileExtensions": [
+    "jsx",
+    "js",
+    "json"
+  ],
+  "testPathIgnorePatterns": [
+    "<rootDir>/(build|docs|node_modules)/"
+  ],
+  "testEnvironment": "node",
+  "globals": {
+    "__REDUX_DEVTOOLS_EXTENSION__": true
+  },
+  "modulePaths": [
+    "<rootDir>/src"
+  ]
+}
