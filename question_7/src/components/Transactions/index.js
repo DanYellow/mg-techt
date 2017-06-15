@@ -1,13 +1,13 @@
 import React from 'react'
 import {
-  Link
+  NavLink
 } from 'react-router-dom';
 
 const Transactions = (props) => {
   return (
     <div className='list-group'>
       {props.transactions.map(transaction => (
-        <Link to={`/${transaction.account}`} className='list-group-item' key={transaction.uuid}>{transaction.account}</Link>
+        <NavLink to={`/${transaction.account}`} activeClassName='active' className='list-group-item' key={transaction.uuid}>{transaction.account}</NavLink>
       ))}
     </div>
   )

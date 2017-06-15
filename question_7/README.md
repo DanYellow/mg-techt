@@ -8,11 +8,6 @@ RUNNING
   - This commands starts server and webpack to compile js files
 - open http://localhost:3000
 
-BUILDING
-====
-- npm run build / yarn run build
-  - This commands creates a build folder with html file and app.js minimized
-
 TESTING
 ====
 - npm test / yarn test (Runs all tests)

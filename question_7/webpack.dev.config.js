@@ -14,7 +14,7 @@ module.exports = {
     tls: 'empty'
   },
   entry: {
-    app: './src/index.js'
+    app: ['babel-polyfill', './src/index.js']
   },
   output: {
     filename: './[name].js'
