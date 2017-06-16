@@ -1,5 +1,10 @@
+/**
+ * Compute string to capitalize each first letter and change undescore to space
+ * @param  {String} str A string to compute
+ * @return {String}     A new string with each first letter of word capitalized and space instead of undescore
+ */
 export const computeString = (str = '') => {
-  if (!str) {
+  if (!str || !str.includes('_')) {
     return str;
   }
 
