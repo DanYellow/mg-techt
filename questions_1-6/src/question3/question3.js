@@ -3,7 +3,7 @@
  * @param  {Array<number>}  sourceArray Unsorted array of Integer
  * @return {Array<number>|Array<Empty>} Sorted array or an empty array we don't pass an array of integers
  */
-const question_2 = (source = []) => {
+const question_3 = (source = []) => {
   if (!source.length || !source.every(item => item === parseInt(item, 10))) {
     return [];
   }
@@ -16,4 +16,4 @@ const question_2 = (source = []) => {
   return sourceCopy;
 }
 
-export default question_2;
+export default question_3;
