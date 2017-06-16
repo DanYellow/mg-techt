@@ -19,3 +19,5 @@ yarn-error.log*
 /question_7/app.js
 /question_7/app.js.map
 /question_7/index.old.html
+
+/**/*.doc#
