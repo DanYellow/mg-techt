@@ -21,3 +21,4 @@ yarn-error.log*
 /question_7/index.old.html
 
 /**/*.doc#
+/**/*.docx#
